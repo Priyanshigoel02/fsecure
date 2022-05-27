@@ -11,12 +11,12 @@ class Profile extends StatelessWidget {
   final String username;
   final String imagePath;
 
-  final String githubURL =
-      "https://github.com/MCarlomagno/FaceRecognitionAuth/tree/master";
+ // final String githubURL =
+     // "https://github.com/MCarlomagno/FaceRecognitionAuth/tree/master";
 
-  void _launchURL() async => await canLaunch(githubURL)
-      ? await launch(githubURL)
-      : throw 'Could not launch $githubURL';
+//   void _launchURL() async => await canLaunch(githubURL)
+//       ? await launch(githubURL)
+//       : throw 'Could not launch $githubURL';
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +57,7 @@ class Profile extends StatelessWidget {
                 margin: EdgeInsets.all(20),
                 padding: EdgeInsets.all(20),
                 decoration: BoxDecoration(
-                  color: Color(0xFFFEFFC1),
+                  color: Color(0xFFFFD2D2), //
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Column(
@@ -70,7 +70,7 @@ class Profile extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      '''If you think this project seems interesting and you want to contribute or need some help implementing it, dont hesitate and lets get in touch!''',
+                      '''If you notice any anonymous face inside the car, you can press the button below which would enable a loud alarm in the car''',
                       style: TextStyle(fontSize: 16),
                       textAlign: TextAlign.left,
                     ),
@@ -78,11 +78,11 @@ class Profile extends StatelessWidget {
                       height: 30,
                     ),
                     InkWell(
-                      onTap: _launchURL,
+                      // onTap: _launchURL,
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          color: Colors.black,
+                          color: Colors.red,
                           boxShadow: <BoxShadow>[
                             BoxShadow(
                               color: Colors.blue.withOpacity(0.1),
@@ -99,14 +99,14 @@ class Profile extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              'CONTRIBUTE',
+                              'PRESS THE BUZZER, NOW',
                               style: TextStyle(color: Colors.white),
                             ),
                             SizedBox(
                               width: 10,
                             ),
                             FaIcon(
-                              FontAwesomeIcons.github,
+                              FontAwesomeIcons.skull,
                               color: Colors.white,
                             )
                           ],
@@ -141,3 +141,4 @@ class Profile extends StatelessWidget {
     );
   }
 }
+
