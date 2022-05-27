@@ -43,6 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue[300],
       appBar: AppBar(
         leading: Container(),
         elevation: 0,
@@ -87,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: Column(
                         children: [
                           Text(
-                            "FACE RECOGNITION AUTHENTICATION",
+                            "FACE SECURED CAR",
                             style: TextStyle(
                                 fontSize: 25, fontWeight: FontWeight.bold),
                             textAlign: TextAlign.center,
@@ -96,9 +97,9 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: 20,
                           ),
                           Text(
-                            "Demo application that uses Flutter and tensorflow to implement authentication with facial recognition",
+                            "Secure and protect your car using facial recognition and make it theft proof!",
                             style: TextStyle(
-                              fontSize: 16,
+                              fontSize: 20,
                             ),
                             textAlign: TextAlign.center,
                           ),
@@ -179,7 +180,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
-                                  'SIGN UP',
+                                  'REGISTER A FACE',
                                   style: TextStyle(color: Colors.white),
                                 ),
                                 SizedBox(
@@ -198,11 +199,11 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ),
                         InkWell(
-                          onTap: _launchURL,
+                         // onTap: _launchURL,
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
-                              color: Colors.black,
+                              color: Colors.pink[300],
                               boxShadow: <BoxShadow>[
                                 BoxShadow(
                                   color: Colors.blue.withOpacity(0.1),
@@ -219,14 +220,14 @@ class _MyHomePageState extends State<MyHomePage> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
-                                  'CONTRIBUTE',
+                                  'CONNECT WITH A CAMERA',
                                   style: TextStyle(color: Colors.white),
                                 ),
                                 SizedBox(
                                   width: 10,
                                 ),
                                 FaIcon(
-                                  FontAwesomeIcons.github,
+                                  FontAwesomeIcons.camera,
                                   color: Colors.white,
                                 )
                               ],
