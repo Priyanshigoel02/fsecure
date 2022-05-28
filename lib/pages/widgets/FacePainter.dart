@@ -1,6 +1,7 @@
 import 'package:google_ml_kit/google_ml_kit.dart';
 import 'package:flutter/material.dart';
-
+//In this class, face is detected using face painter and
+//it paints a rectangle on the screen within which face lies.
 class FacePainter extends CustomPainter {
   FacePainter({@required this.imageSize, @required this.face});
   final Size imageSize;
