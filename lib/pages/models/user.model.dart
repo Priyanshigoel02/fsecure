@@ -1,5 +1,5 @@
 import 'dart:convert';
-
+//This file initializes the user.
 class User {
   String user;
   String password;
@@ -10,7 +10,7 @@ class User {
     this.password,
     this.modelData,
   });
-
+//This maps the user data and stores it in a json file on the device.
   static User fromMap(Map<String, dynamic> user) {
     return new User(
       user: user['user'],
