@@ -8,7 +8,8 @@ import 'package:face_net_authentication/services/ml_service.dart';
 import 'package:flutter/material.dart';
 import '../home.dart';
 import 'app_text_field.dart';
-
+//This class implements the authentication 
+//action buttons located everywhere in the app.
 class AuthActionButton extends StatefulWidget {
   AuthActionButton(
       {Key key, @required this.onPressed, @required this.isLogin, this.reload});
