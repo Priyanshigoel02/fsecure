@@ -4,7 +4,7 @@ import 'package:face_net_authentication/pages/models/user.model.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path_provider/path_provider.dart';
-
+//Database using Sqflite is initialized.
 class DatabaseHelper {
   static final _databaseName = "MyDatabase.db";
   static final _databaseVersion = 1;
@@ -14,7 +14,7 @@ class DatabaseHelper {
   static final columnUser = 'user';
   static final columnPassword = 'password';
   static final columnModelData = 'model_data';
-
+//DB variables are defined here which are responsible for storing user's data.
   DatabaseHelper._privateConstructor();
   static final DatabaseHelper instance = DatabaseHelper._privateConstructor();
 
@@ -31,7 +31,7 @@ class DatabaseHelper {
     return await openDatabase(path,
         version: _databaseVersion, onCreate: _onCreate);
   }
-
+//A DB table for inserting user's record has been created just like SQL.
   Future _onCreate(Database db, int version) async {
     await db.execute('''
           CREATE TABLE $table (
