@@ -8,7 +8,9 @@ import 'package:face_net_authentication/services/image_converter.dart';
 import 'package:google_ml_kit/google_ml_kit.dart';
 import 'package:tflite_flutter/tflite_flutter.dart';
 import 'package:image/image.dart' as imglib;
-
+//This is one of the brain file of our project in which
+//using euclidean distance we compare various features 
+//of the face to help to user to get loggen into the account.
 class MLService {
 
   Interpreter _interpreter;
@@ -117,7 +119,7 @@ class MLService {
     }
     return predictedResult;
   }
-
+//Calculation of the euclidean distance.
   double _euclideanDistance(List e1, List e2) {
     if (e1 == null || e2 == null) throw Exception("Null argument");
 
