@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+//This class implements the authentication button
+//located below while login and registering.
 class AuthButton extends StatelessWidget {
   const AuthButton({Key key, @required this.onTap}) : super(key: key);
   final Function onTap;
