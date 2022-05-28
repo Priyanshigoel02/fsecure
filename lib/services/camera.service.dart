@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:camera/camera.dart';
 import 'package:flutter/foundation.dart';
 import 'package:google_ml_kit/google_ml_kit.dart';
-
+//In this particular file, the camera service is being initialized.
 class CameraService {
   CameraController _cameraController;
   CameraController get cameraController => this._cameraController;
