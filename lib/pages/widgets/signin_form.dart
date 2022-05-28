@@ -5,7 +5,8 @@ import 'package:face_net_authentication/pages/widgets/app_button.dart';
 import 'package:face_net_authentication/pages/widgets/app_text_field.dart';
 import 'package:face_net_authentication/services/camera.service.dart';
 import 'package:flutter/material.dart';
-
+//This class describes the parameters in the form 
+//that are asked by you while signing into the app.
 class SignInSheet extends StatelessWidget {
   SignInSheet({Key key, @required this.user}) : super(key: key);
   final User user;
