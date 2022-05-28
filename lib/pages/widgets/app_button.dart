@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+//This is a general class for the app buttons located
+//on the home page of this project.
 class AppButton extends StatelessWidget {
   AppButton(
       {this.onPressed,
