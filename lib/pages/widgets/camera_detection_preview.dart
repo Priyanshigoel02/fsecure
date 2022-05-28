@@ -5,7 +5,7 @@ import 'package:face_net_authentication/pages/widgets/FacePainter.dart';
 import 'package:face_net_authentication/services/camera.service.dart';
 import 'package:face_net_authentication/services/face_detector_service.dart';
 import 'package:flutter/material.dart';
-
+//This is for the camera detection service in the project.
 class CameraDetectionPreview extends StatelessWidget {
   CameraDetectionPreview({Key key}) : super(key: key);
 
