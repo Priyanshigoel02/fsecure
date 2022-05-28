@@ -5,7 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'home.dart';
-
+//This class implements the profile page of our app 
+//which is displayed after successfully logging into the device.
 class Profile extends StatelessWidget {
   const Profile(this.username, {Key key, this.imagePath}) : super(key: key);
   final String username;
