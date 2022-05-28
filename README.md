@@ -19,3 +19,13 @@ When the user tries to log into the account, the application performs a search i
 
 
 ![Screenshot (135)](https://user-images.githubusercontent.com/77791069/170812598-61fc8e44-13d2-4303-8cb1-0f1d81feed20.png)
+
+After successfully verifying your face, the app logs you in. 
+After logging in, you have the right to press a buzzer button situated on the profile page of the app, where an alarm could be played inside the car.
+
+At the home page, you can connect your app to a wireless camera which would detect any anonymous faces inside the car and inform you about any possible theft through push notifications. This system makes you theft-proof!
+
+Future scope of this prototype:
+In the future, the scope of this prototype can be extended in such a way that it could be connected to a buzzer as well as a mask detection model can be incorporated inside it, to make the system concrete.
+
+Thank you for reading this!
